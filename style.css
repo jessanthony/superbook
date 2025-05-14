@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'tailwindcss';
+/* In your global CSS file (e.g., styles.css) */
+@tailwind utilities;
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.active{
+  @apply font-bold;
+}
+
+button{
+    @apply cursor-pointer;
+}
+
+.btn-nav{
+    @apply px-4 py-2 cursor-pointer border-b-3 border-b-transparent hover:border-b-orange-400 transition-all duration-300;
+}
+
+/* .card-template::after{
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    top: 15px;
+    right: -15px;
+    z-index: -1;
+
+} */
+
+/* Reusable card styles */
+.card-template {
+    @apply w-[250px] text-center px-5 py-1 rounded-2xl bg-none relative;
+  }
+
+  .card-template p{
+    @apply text-orange-400 font-semibold text-xl;
+  }
+
+  .card-title {
+    @apply font-semibold text-2xl border-b-1 border-orange-400;
+  }
+  .card-image {
+    @apply  shadow-[2px_2px_10px_black,2px_2px_10px_black,2px_2px_10px_black];
+  }
+  .card-image img {
+    @apply object-cover h-[300px] w-full;
+  }
+
+.card-yellow::after{
+    background: yellow;
+}
+
+.card-green::after{
+    background: limegreen;
+}
+
+.card-skyblue::after{
+    background: #00a2ff;
+}
+
+.card-orange::after{
+    background: orange;
+}
+
+.intro-container{
+    background-image: url("img/inpo-minimal.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.collection-container{
+    background-image: url("img/inspo-full-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.company-container{
+    background-image: url("img/inspo-right.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.review-container{
+  background-image: url("img/inspo-full.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 60s linear infinite;
+  }
+
+  /* Products */
+
+  .product-container{
+    background-image: url("img/inspo-full.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sidebar{
+    background-image: url("img/inspo-full.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .scrollable::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable::-webkit-scrollbar-track {
+    background: transparent; /* Tailwind gray-200 */
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: #fb2c36; /* Tailwind orange-400 */
+    border-radius: 6px;
+  }
+
+  /* Optional: Firefox support */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #fb2c36 transparent; /* thumb track */
+}
+
