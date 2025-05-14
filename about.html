@@ -65,10 +65,10 @@
                 <h2 class="text-3xl font-bold mb-8 border-b-2 border-orange-400 pb-2 inline-block">Our Team</h2>
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="text-center">
-                        <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-orange-400/20 flex items-center justify-center">
-                            <span class="text-4xl">👨‍💼</span>
+                        <div class="bg-[url('https://scontent.fceb3-1.fna.fbcdn.net/v/t39.30808-6/492360559_2397635460604352_2902303057346291101_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=VHdpruCTiaoQ7kNvwGTzFHS&_nc_oc=AdlM6w0m15IFPJYhSO77HDo52mdAGUd4I7QfYgDDDpPgkt38zcwgvjclwyMzCHCY6bQ&_nc_zt=23&_nc_ht=scontent.fceb3-1.fna&_nc_gid=S4NK5cBLI_lFwgucp5XiRg&oh=00_AfKCfvPbRDCTdeoHH6oy925_GLbTDRxApd9BtxnSHQ1xcg&oe=6829C7B5')] bg-cover w-32 h-32 mx-auto mb-4 rounded-full bg-orange-400/20 flex items-center justify-center">
+                            
                         </div>
-                        <h3 class="text-xl font-bold mb-2">John Smith</h3>
+                        <h3 class="text-xl font-bold mb-2">John Vince Key</h3>
                         <p class="text-orange-400">Founder & CEO</p>
                     </div>
                     <div class="text-center">
@@ -99,7 +99,6 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
-                document.getElementById('nav-about').classList.add('active');
             })
             .catch(err => console.error('Error loading nav:', err));
 
